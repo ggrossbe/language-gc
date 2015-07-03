@@ -1,0 +1,12 @@
+{
+  "name": "language-gc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GC log support for Atom.",
+  "repository": "https://github.com/ggrossbe/language-gc",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}

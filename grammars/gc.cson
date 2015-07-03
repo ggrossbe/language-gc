@@ -1,0 +1,22 @@
+'scopeName': 'text.gc'
+'name': 'gc'
+'fileTypes': [
+  'log'
+]
+# [ParNew: 1226816K->89775K(1380160K), 0.1553990 secs]
+'patterns': [
+  {
+    'captures':
+      '1':
+        'name': 'variable.other.gc'
+      '2':
+        'name': 'entity.name.gc'
+      '3':
+        'name': 'constant.other.gc'
+      '4':
+        'name': 'constant.other.gc'
+#    'match': '(?i:^\\s*(\\[)(\\w+:)\\s+(\\d+K->\\d+K\\(\\d+K\\))(\\])'
+    'match': '(\\[)(\\w+:)\\s+(\\d+K->\\d+K\\(\\d+K\\))'
+    'name': 'meta.generation.gc'
+  }
+]
