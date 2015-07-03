@@ -3,20 +3,56 @@
 'fileTypes': [
   'log'
 ]
-# [ParNew: 1226816K->89775K(1380160K), 0.1553990 secs]
+# 110.875: [Full GC110.875: [CMS: 383446K->613774K(11049408K), 3.2362290 secs] 1596961K->613774K(12429568K), [CMS Perm : 117689K->117632K(118016K)], 3.2366630 secs] [Times: user=3.09 sys=0.15, real=3.24 secs]
 'patterns': [
   {
     'captures':
       '1':
-        'name': 'variable.other.gc'
+        'name': 'storage.other.gc'
       '2':
-        'name': 'entity.name.gc'
+        'name': 'variable.other.gc'
       '3':
-        'name': 'constant.other.gc'
+        'name': 'entity.name.gc'
       '4':
+        'name': 'storage.other.gc'
+      '5':
+        'name': 'variable.other.gc'
+      '6':
+        'name': 'entity.name.other.gc'
+      '7':
+        'name': 'variable.other.gc'
+      '8':
         'name': 'constant.other.gc'
-#    'match': '(?i:^\\s*(\\[)(\\w+:)\\s+(\\d+K->\\d+K\\(\\d+K\\))(\\])'
-    'match': '(\\[)(\\w+:)\\s+(\\d+K->\\d+K\\(\\d+K\\))'
+      '9':
+        'name': 'variable.other.gc'
+      '10':
+        'name': 'storage.other.gc'
+      '11':
+        'name': 'variable.other.gc'
+      '12':
+        'name': 'keyword.other.gc'
+      '13':
+        'name': 'variable.other.gc'
+      '15':
+        'name': 'variable.other.gc'
+      '16':
+        'name': 'entity.name.gc'
+      '17':
+        'name': 'variable.other.gc'
+      '18':
+        'name': 'constant.other.gc'
+      '19':
+        'name': 'variable.other.gc'
+      '20':
+        'name': 'storage.other.gc'
+      '21':
+        'name': 'variable.other.gc'
+      '22':
+        'name': 'storage.other.gc'
+      '23':
+        'name': 'variable.other.gc'
+    'match': '(?i:^\\s*(\\d+\\.\\d+))(:\\s*\\[)([a-zA-Z]+\\s*[a-zA-Z]*)(\\d+\\.\\d+)(:\\s*\\[)(\\w+)(:\\s*)(\\d+K->\\d+K\\(\\d+K\\))(,\\s*)(\\d+\\.\\d+\\s*secs)(\\]\\s*)(\\d+K->\\d+K\\(\\d+K\\))(,\\s*)((\\[)([a-zA-Z]+\\s*[a-zA-Z]*)(\\s*:\\s*)(\\d+K->\\d+K\\(\\d+K\\))(\\],\\s*))?(\\d+\\.\\d+\\s*secs)(\\]\\s*\\[)(Times:\\s*user=\\d+\\.\\d+\\s*sys=\\d+\\.\\d+,\\s*real=\\d+\\.\\d+\\s*secs)(\\])'
+#    'match': '(\\[)(\\w+:)\\s+(\\d+K->\\d+K\\(\\d+K\\))'
     'name': 'meta.generation.gc'
   }
 ]
